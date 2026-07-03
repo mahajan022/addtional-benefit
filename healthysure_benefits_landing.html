@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthysure - Health & Insurance Benefits</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Logo Section */
+        .logo-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #11a387;
+            margin: 0 0 0.8rem;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #666;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* Grid Layout */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 2rem;
+        }
+
+        /* Card Styles */
+        .benefit-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 1.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+        }
+
+        .benefit-card:hover {
+            box-shadow: 0 8px 16px rgba(17, 163, 135, 0.12);
+            border-color: #11a387;
+            transform: translateY(-4px);
+        }
+
+        .benefit-card.coming-soon {
+            opacity: 0.75;
+        }
+
+        .benefit-card.coming-soon:hover {
+            opacity: 1;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 1.2rem;
+        }
+
+        .card-icon {
+            width: 52px;
+            height: 52px;
+            background: #f0faf8;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .card-title {
+            font-size: 19px;
+            font-weight: 600;
+            color: #11a387;
+            margin: 0;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #555;
+            margin: 0 0 1.2rem;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        .card-link {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #11a387;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: gap 0.2s ease;
+        }
+
+        .benefit-card:hover .card-link {
+            gap: 10px;
+        }
+
+        .card-link.coming {
+            color: #aaa;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer p {
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .header p {
+                font-size: 14px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .benefit-card {
+                padding: 1.5rem;
+            }
+
+            .card-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 24px;
+            }
+
+            .card-title {
+                font-size: 17px;
+            }
+
+            .card-description {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="logo.jpeg" alt="Healthysure Logo" style="max-width: 200px; height: auto; margin-bottom: 2rem;">
+        </div>
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Our Health & Insurance Benefits</h1>
+            <p>Choose the coverage that's right for you</p>
+        </div>
+
+        <!-- Benefits Grid -->
+        <div class="benefits-grid">
+            
+            <!-- Pet Insurance Card -->
+            <div class="benefit-card" onclick="window.open('https://www.app.healthysure.in/wellness/offer/eb7be803-7045-4af7-9c8b-83ca6ad29057', '_blank')">
+                <div class="card-header">
+                    <div class="card-icon">🐾</div>
+                    <h3 class="card-title">Pet Insurance</h3>
+                </div>
+                <p class="card-description">Comprehensive pet care coverage from just ₹2,800/year with OPD, surgery & hospitalisation benefits.</p>
+                <a class="card-link" href="javascript:void(0)">Explore Plans <span>→</span></a>
+            </div>
+
+            <!-- Personal OPD Card -->
+            <div class="benefit-card" onclick="window.open('https://www.app.healthysure.in/wellness/offer/9eb10644-1e4c-4a4f-8890-51cb0937a344', '_blank')">
+                <div class="card-header">
+                    <div class="card-icon">👨‍⚕️</div>
+                    <h3 class="card-title">Personal OPD</h3>
+                </div>
+                <p class="card-description">Doctor visits, diagnostics & medicines covered for everyday healthcare needs—up to ₹15,000.</p>
+                <a class="card-link" href="javascript:void(0)">Learn More <span>→</span></a>
+            </div>
+
+            <!-- Cyber Protection Card -->
+            <div class="benefit-card" onclick="window.open('https://forms.zohopublic.in/healthysure1/form/CyberInsurance1/formperma/EbvctNVeBHupqirqkHgS43mP-svGjHc_tyQ_2R7JW7c', '_blank')">
+                <div class="card-header">
+                    <div class="card-icon">🛡️</div>
+                    <h3 class="card-title">Cyber Protection</h3>
+                </div>
+                <p class="card-description">Protect yourself from cyber threats with comprehensive protection plan covering identity theft & fraud.</p>
+                <a class="card-link" href="javascript:void(0)">Get Protected <span>→</span></a>
+            </div>
+
+            <!-- Super Top-Up Card -->
+            <div class="benefit-card" onclick="window.open('https://supertopup.healthysure.in/#get-quote', '_blank')">
+                <div class="card-header">
+                    <div class="card-icon">⭐</div>
+                    <h3 class="card-title">Super Top-Up</h3>
+                </div>
+                <p class="card-description">Boost your health insurance coverage with affordable top-up plans for enhanced financial protection.</p>
+                <a class="card-link" href="javascript:void(0)">Get Quote <span>→</span></a>
+            </div>
+
+            <!-- Travel Insurance Card -->
+            <div class="benefit-card coming-soon">
+                <div class="card-header">
+                    <div class="card-icon">✈️</div>
+                    <h3 class="card-title">Travel Insurance</h3>
+                </div>
+                <p class="card-description">Travel worry-free with comprehensive coverage for medical emergencies, trip cancellation & more.</p>
+                <a class="card-link coming" href="javascript:void(0)">Coming Soon <span>⏳</span></a>
+            </div>
+
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>Need help choosing? Contact our support team for personalized recommendations</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
